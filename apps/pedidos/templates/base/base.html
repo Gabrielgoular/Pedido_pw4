@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - {% block title %} {% endblock title %}</title>
+</head>
+<body>
+    {% block body %}
+
+    {% endblock body %}
+
+
+<script>
+        function to(url){ location.href= url; }
+
+        var messseges = [
+        {% for message in messages %}
+        '{{ messege.messege}}',
+        {% endfor %}
+        ] 
+
+        messseges.map(mensagem => alert(mensagem));
+     </script>
+
+
+
+</body>
+</html>
